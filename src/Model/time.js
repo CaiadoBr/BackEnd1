@@ -3,7 +3,7 @@ const {Sequelize, DataTypes} = require("sequelize");
 let con = require("../orm");
 
 
-const Time = db.define("Time",
+const Time = con.define("Time",
     {
         id: {
             type: DataTypes.INTEGER,

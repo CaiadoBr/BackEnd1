@@ -1,7 +1,7 @@
 const {Sequelize, DataTypes} = require("sequelize");
 let con = require("../orm");
 
-const Evento = db.define("Evento",
+const Evento = con.define("Evento",
     {
        IdEvento: {
             type: DataTypes.INTEGER,

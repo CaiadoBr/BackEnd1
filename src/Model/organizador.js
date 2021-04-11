@@ -1,6 +1,6 @@
 const {Sequelize, DataTypes} = require("sequelize");
 let con = require("../orm");
-const Organizador = db.define("Organizador",
+const Organizador = con.define("Organizador",
     {
         Id: {
             type: DataTypes.INTEGER,
