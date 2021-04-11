@@ -1,6 +1,5 @@
 const {Sequelize, DataTypes} = require("sequelize");
-const db = require("../db");
-
+let con = require("../orm");
 const Posicao = db.define("Posicao",
     {
         PosicaoId: {

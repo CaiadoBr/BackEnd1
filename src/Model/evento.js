@@ -1,6 +1,5 @@
 const {Sequelize, DataTypes} = require("sequelize");
-const db = require("../db");
-const Livro = require("./esporte");
+let con = require("../orm");
 
 const Evento = db.define("Evento",
     {
