@@ -6,12 +6,12 @@ async function criarBanco() {
 }
 
 async function inserir() {
-    await Professor.create({nome:"Beltrano"})
+    await esporte.create({nome:"Soccer"})
 }
 
 async function consultar() {
-    let res = await Professor.findAll();
+    let res = await esporte.findAll();
     console.log(res);
 }
 
-consultar();
+criarBanco();

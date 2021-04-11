@@ -1,7 +1,7 @@
 const {Sequelize, DataTypes} = require("sequelize");
 let con = require("../orm");
 
-const Esporte = db.define("Esporte",
+const Esporte = con.define("Esporte",
     {
         EsporteId: {
             type: DataTypes.INTEGER,
@@ -18,3 +18,4 @@ const Esporte = db.define("Esporte",
         
     }
 );
+module.exports = Esporte;
